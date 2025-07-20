@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="217c7bde-60a9-452d-b061-64e644b23a2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/model/Resource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/repository/ResourceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/service/LearningPathService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/ui/ConsoleUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/learningpath.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/learningpath/service/LearningPathServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/repository/ResourceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/repository/ResourceRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +55,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.learningpath.Main" />
+      <module name="learning-path-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.learningpath.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LearningPathServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning-path-generator" />
       <extension name="coverage">
@@ -90,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.LearningPathServiceTest" />
       </list>
     </recent_temporary>
@@ -110,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753026132976</updated>
-      <workItem from="1753026134075" duration="3801000" />
+      <workItem from="1753026134075" duration="6707000" />
     </task>
     <servers />
   </component>
