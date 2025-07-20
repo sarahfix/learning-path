@@ -1,0 +1,7 @@
+org\learningpath\service\LearningPathService.class
+org\learningpath\model\Resource.class
+org\learningpath\ui\ConsoleUI.class
+org\learningpath\repository\ResourceRepository.class
+org\learningpath\model\User.class
+org\learningpath\Main.class
+org\learningpath\ui\LearningPathController.class

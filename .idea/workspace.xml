@@ -4,32 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="217c7bde-60a9-452d-b061-64e644b23a2a" name="Changes" comment="">
+    <list default="true" id="f80d380d-af72-45c5-878e-6085a3aad29a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/ui/LearningPathController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/learningpath/ui/LearningPath.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/repository/ResourceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/repository/ResourceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/learningpath/service/LearningPathServiceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/learningpath/service/LearningPathServiceTest$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="3093nkJS9kafX8nbBKVnkTbWtGe" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="309c2bwHV1nyBbMzhOdmAOVbBtd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,10 +38,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "JUnit.LearningPathServiceTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.learning-path-generator [clean].executor": "Run",
+    "Maven.learning-path-generator [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -48,17 +48,25 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sarah\OneDrive\Personalized Learning\src\main\resources\org\learningpath\ui" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.learningpath.Main" />
       <module name="learning-path-generator" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Java\javafx-sdk-17.0.16\lib&quot; --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.learningpath.*" />
@@ -69,31 +77,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LearningPathServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning-path-generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.learningpath.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.learningpath.service" />
-      <option name="MAIN_CLASS_NAME" value="org.learningpath.service.LearningPathServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Personalized Learning" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.LearningPathServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -108,19 +94,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="217c7bde-60a9-452d-b061-64e644b23a2a" name="Changes" comment="" />
-      <created>1753026132976</created>
+      <changelist id="f80d380d-af72-45c5-878e-6085a3aad29a" name="Changes" comment="" />
+      <created>1753043024731</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1753026132976</updated>
-      <workItem from="1753026134075" duration="6707000" />
+      <updated>1753043024731</updated>
+      <workItem from="1753043026213" duration="1916000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.db" />
   </component>
 </project>
