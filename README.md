@@ -5,7 +5,7 @@ A Java application that generates personalized learning paths based on user goal
 1. Install JDK 17[](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
 2. Open in IntelliJ IDEA.
 3. Ensure Maven downloads dependencies (sqlite-jdbc, JUnit).
-4. Run `Main.java` to start the console app.
+4. Run `Main.java` to start the JavaFX app.
 
 ## Features
 - Input learning goals, skill level, and weekly hours.
