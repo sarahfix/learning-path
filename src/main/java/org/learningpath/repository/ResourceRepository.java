@@ -1,4 +1,5 @@
 package org.learningpath.repository;
+import org.learningpath.DanceCSVLoader;
 import org.learningpath.model.Resource;
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,58 +18,74 @@ public class ResourceRepository {
     }
 
     /**
-     * Creates the 'resources' table if it doesn't exist and inserts sample data.
+     * Setting up and populating a data table with dance resource information.
      */
     private void initializeDatabase() {
+        // Opening a connection to database
         try (Connection conn = DriverManager.getConnection(DB_URL);
+             // Create Statement object
              Statement stmt = conn.createStatement()) {
-            // Create table
-            String sql = "CREATE TABLE IF NOT EXISTS resources (" +
+
+            // Create fresh table
+            stmt.execute("DROP TABLE IF EXISTS resources");
+            // New resource table
+            stmt.execute("CREATE TABLE resources (" +
                     "id INTEGER PRIMARY KEY, " +
                     "title TEXT NOT NULL, " +
                     "url TEXT NOT NULL, " +
+                    "genre TEXT NOT NULL, " +
                     "difficulty TEXT NOT NULL, " +
-                    "estimated_hours INTEGER NOT NULL)";
-            stmt.execute(sql);
+                    "estimated_hours INTEGER NOT NULL)");
 
-            // Insert sample data if the table is empty
-            if (isTableEmpty(stmt)) {
-                String insertSql = "INSERT INTO resources VALUES " +
-                        "(1, 'Java Basics Tutorial', 'https://example.com/java-basics', 'Beginner', 5)," +
-                        "(2, 'Java OOP Concepts', 'https://example.com/java-oop', 'Intermediate', 8)," +
-                        "(3, 'Java Variables and Types', 'https://example.com/java-variables', 'Beginner', 3)," +
-                        "(4, 'Java Advanced Patterns', 'https://example.com/java-patterns', 'Advanced', 10)";
-                stmt.execute(insertSql);
+            // Load dance resources from CSV
+            List<Resource> resources = DanceCSVLoader.loadFromCSV();
+            // Adding each record to database
+            for (Resource r : resources) {
+                String sql = String.format(
+                        "INSERT INTO resources VALUES (%d, '%s', '%s', '%s', '%s', %d)",
+                        r.getId(),
+                        r.getTitle().replace("'", "''"), // Handle apostrophes
+                        r.getUrl(),
+                        r.getGenre(),
+                        r.getDifficulty(),
+                        r.getEstimatedHours()
+                );
+                stmt.execute(sql);
             }
-        } catch (SQLException e) {
+            // Confirmation
+            System.out.println("Loaded " + resources.size() + " dance resources");
+
+        } catch (Exception e) {
+            System.err.println("Error initializing database:");
             e.printStackTrace();
         }
     }
 
-    // Checks if the 'resources' table is empty
-    private boolean isTableEmpty(Statement stmt) throws SQLException {
-        ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM resources");
-        rs.next();
-        return rs.getInt(1) == 0;
-    }
-
     /**
-     * Fetches resources matching a given difficulty level.
+     * Fetches resources matching a given difficulty level and genre.
+     *
+     * @param genre: "Ballet", "Jazz", or "Hip-Hop"
      * @param difficulty : "Beginner", "Intermediate", or "Advanced".
      * @return List of matching resources.
      */
-    public List<Resource> getResourcesByDifficulty(String difficulty) {
+    public List<Resource> getResourcesByGenreAndDifficulty(String genre, String difficulty) {
+        // Initialize a new arraylist
         List<Resource> resources = new ArrayList<>();
-        String sql = "SELECT * FROM resources WHERE difficulty = ?";
+        String sql = "SELECT * FROM resources WHERE genre = ? AND difficulty = ?";
+
         try (Connection conn = DriverManager.getConnection(DB_URL);
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, difficulty);
+            // Set parameters safely
+            pstmt.setString(1, genre);
+            pstmt.setString(2, difficulty);
             ResultSet rs = pstmt.executeQuery();
+            // Loop through set and create Resource objects for each matching row.
             while (rs.next()) {
                 resources.add(new Resource(
                         rs.getInt("id"),
                         rs.getString("title"),
                         rs.getString("url"),
+                        rs.getString("genre"),
                         rs.getString("difficulty"),
                         rs.getInt("estimated_hours")
                 ));
@@ -76,6 +93,14 @@ public class ResourceRepository {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        // List containing all matching entries
         return resources;
+    }
+
+    // Checks if the 'resources' table is empty
+    private boolean isTableEmpty(Statement stmt) throws SQLException {
+        ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM resources");
+        rs.next();
+        return rs.getInt(1) == 0;
     }
 }

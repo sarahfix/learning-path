@@ -4,27 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f80d380d-af72-45c5-878e-6085a3aad29a" name="Changes" comment="">
+    <list default="true" id="f80d380d-af72-45c5-878e-6085a3aad29a" name="Changes" comment="adding edited file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/DanceCSVLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/model/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/model/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/repository/ResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/repository/ResourceRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/service/LearningPathService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/service/LearningPathService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/ui/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/ui/ConsoleUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learningpath/ui/LearningPathController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learningpath/ui/LearningPathController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/learningpath.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/learningpath/ui/LearningPath.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/learningpath/ui/LearningPath.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/learningpath.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/learningpath.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/model/Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/model/Resource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/repository/ResourceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/repository/ResourceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/service/LearningPathService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/service/LearningPathService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/ui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/ui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/ui/LearningPath.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/ui/LearningPath.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learningpath/ui/LearningPathController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learningpath/ui/LearningPathController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="309c2bwHV1nyBbMzhOdmAOVbBtd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,6 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "JavaFX__initialization",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sarah/OneDrive/Personalized Learning/src/main/resources/Demo1.png",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +72,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sarah\OneDrive\Personalized Learning\images" />
+      <recent name="C:\Users\sarah\OneDrive\Personalized Learning\src\main\resources" />
       <recent name="C:\Users\sarah\OneDrive\Personalized Learning\src\main\resources\org\learningpath\ui" />
     </key>
   </component>
@@ -100,5 +122,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="merging main with my branch" />
+    <MESSAGE value="adding edited file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding edited file" />
   </component>
 </project>

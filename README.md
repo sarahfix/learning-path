@@ -1,5 +1,7 @@
-# Personalized Learning Path Generator
-A Java application that generates personalized learning paths based on user goals, skill level, and available time.
+# Personalized Dance Learning Path Generator
+A Java application that generates personalized dance learning paths based on user goal genre, skill level, and available time.
+
+This is a personal/individual project to strengthen my skills in Java, algorithms, sql, and UI generation.
 
 ## Setup
 1. Install JDK 17[](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
@@ -8,13 +10,8 @@ A Java application that generates personalized learning paths based on user goal
 4. Run `Main.java` to start the JavaFX app.
 
 ## Features
-- Input learning goals, skill level, and weekly hours.
-- Generates a learning path with curated resources.
-- Stores resources in SQLite.
+- Choose genre/style, skill level, and weekly hours.
+- Generates a learning path with curated YouTube resources.
 
-## Sample Output
-- Welcome to the Personalized Learning Path Generator! Enter your learning goal (e.g., Learn Java): **Learn Java**
-- Enter your skill level (Beginner/Intermediate/Advanced): **Beginner**
-- Enter hours available per week: **5**
-  - Your Personalized Learning Path:
-  Java Basics Tutorial (Beginner, 5 hours): https://example.com/java-basics
+## Sample Screen
+![Demo Screenshot](images/Demo1.png)
