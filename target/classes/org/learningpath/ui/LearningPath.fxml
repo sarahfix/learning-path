@@ -1,26 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.collections.FXCollections?>
-<?import javafx.scene.control.ComboBox?>
-
-
 <?import java.lang.String?>
-<?import javafx.scene.control.ChoiceBox?>
-<VBox alignment="CENTER" spacing="10" prefWidth="400" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.learningpath.ui.LearningPathController">
+
+<VBox alignment="CENTER" spacing="15" prefWidth="500"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.learningpath.ui.LearningPathController"
+      style="-fx-background-color: #f8f1ff;">
+
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets top="25" right="25" bottom="25" left="25"/>
     </padding>
-    <Label text="Personalized Learning Path Generator" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-    <Label text="Learning Goal (e.g., Java, Ballet, Math):"/>
-    <TextField fx:id="goalField" promptText="Enter your learning goal"/>
-    <Label text="Skill Level:"/>
-    <ChoiceBox fx:id="skillLevelBox">
+
+    <!-- Header with Image -->
+    <HBox alignment="CENTER" spacing="10">
+        <ImageView fx:id="logoImage" fitHeight="50" fitWidth="50" preserveRatio="true">
+            <image>
+                <Image url="@/dance_icon.png" />
+            </image>
+        </ImageView>
+        <Label text="Dance Learning Path Generator"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #b663e2;"/>
+    </HBox>
+
+    <!-- Dance Style Selection -->
+    <Label text="Select Dance Style:" style="-fx-font-weight: bold;"/>
+    <ComboBox fx:id="genreBox" promptText="Choose your dance style" prefWidth="600">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Ballet"/>
+                <String fx:value="Hip-Hop"/>
+                <String fx:value="Jazz"/>
+                <String fx:value="Contemporary"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Skill Level Selection -->
+    <Label text="Your Skill Level:" style="-fx-font-weight: bold;"/>
+    <ComboBox fx:id="skillLevelBox" promptText="Select your level" prefWidth="600">
         <items>
             <FXCollections fx:factory="observableArrayList">
                 <String fx:value="Beginner"/>
@@ -28,11 +52,23 @@
                 <String fx:value="Advanced"/>
             </FXCollections>
         </items>
-    </ChoiceBox>
+    </ComboBox>
 
-    <Label text="Hours Available Per Week:"/>
-    <TextField fx:id="hoursField" promptText="Enter hours (e.g., 5)"/>
-    <Button fx:id="generateButton" text="Generate Learning Path" onAction="#generateLearningPath"/>
-    <Label text="Your Learning Path:"/>
-    <TextArea fx:id="resultArea" editable="false" prefHeight="200" wrapText="true"/>
+    <!-- Practice Time Input -->
+    <Label text="Weekly Practice Time (hours):" style="-fx-font-weight: bold;"/>
+    <TextField fx:id="hoursField" promptText="e.g., 5" prefWidth="600"/>
+
+    <!-- Generate Button -->
+    <Button fx:id="generateButton" text="Generate My Dance Path"
+            onAction="#generateLearningPath"
+            style="-fx-background-color: #b663e2; -fx-text-fill: white; -fx-font-weight: bold;"
+            prefWidth="300"/>
+
+    <!-- Results Section -->
+    <Label text="Your Personalized Dance Path:" style="-fx-font-weight: bold;"/>
+    <TextArea fx:id="resultArea" editable="false" prefHeight="250" wrapText="true"
+              style="-fx-font-family: 'Arial'; -fx-font-size: 14px;"/>
+
+    <!-- Footer -->
+    <Label text="Happy Dancing!" style="-fx-font-style: italic; -fx-text-fill: #8b23a3;"/>
 </VBox>
