@@ -13,5 +13,3 @@ This is a personal/individual project to strengthen my skills in Java, algorithm
 - Choose genre/style, skill level, and weekly hours.
 - Generates a learning path with curated YouTube resources.
 
-## Sample Screen
-![Demo Screenshot](images/Demo1.png)
