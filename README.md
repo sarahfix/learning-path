@@ -1,4 +1,4 @@
-# Personalized Dance Learning Path Generator
+# Personalized Dance Learning Path Generator (in progress)
 A Java application that generates personalized dance learning paths based on user goal genre, skill level, and available time.
 
 This is a personal/individual project to strengthen my skills in Java, algorithms, sql, and UI generation.
